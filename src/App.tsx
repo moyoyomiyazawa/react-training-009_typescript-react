@@ -2,14 +2,7 @@ import axios from 'axios';
 import { useState } from 'react';
 import './App.css';
 import { Todo } from './Todo';
-
-// 型エイリアスを定義
-type TodoType = {
-  userId: number;
-  id: number;
-  title: string;
-  completed: boolean;
-};
+import { TodoType } from './types/todo';
 
 function App() {
   const [todos, setTodos] = useState<TodoType[]>([]);
